@@ -83,7 +83,7 @@ remote_path="/shared/"
 logging="false"
 
 
-while getopts hu:m:Ur: o
+while getopts hu:m:Ur:s: o
 do
     case $o in
         h)
@@ -100,6 +100,12 @@ do
             # TODO: User feedback.
             do_unmount
             exit
+            ;;
+        r)
+            remote_path=$OPTARG
+            ;;
+        s)
+            remote_server=$OPTARG
             ;;
     esac
 done
