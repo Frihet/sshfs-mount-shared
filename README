@@ -1,0 +1,6 @@
+sshfs-mount-shared
+------------------
+Christian Bryn <cb@freecode.no> 2011
+
+Script for mounting/unmouting remote SSHFS file system.
+Will deal with files in local mount point if they exist (i.e. caused by OpenOffice saving when the mount point is no longer available).
