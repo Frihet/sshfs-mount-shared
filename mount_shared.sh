@@ -112,6 +112,8 @@ done
 
 shift $(($OPTIND-1))
 
+which sshfs>/dev/null || zenity --info --title "sshfs missing" --text "SSHFS is not installed! Install or ask for help :)"
+
 # TODO: check network connectivity
 #if ( ping -q 
 
